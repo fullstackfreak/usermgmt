@@ -23,7 +23,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="login" element={<Login />} />
         <Route
           path="/admin"
           element={
@@ -32,7 +32,7 @@ function App() {
             </PrivateRoute>
           }
         >
-          <Route index element={<Dashboard />} />
+          <Route element={<Dashboard />} />
           <Route path="users" element={<Users />} />
           <Route path="users/edit/:id" element={<EditUser />} />
           <Route path="users/add" element={<AddUser />} />
